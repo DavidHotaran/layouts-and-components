@@ -3,7 +3,8 @@ import { useRouter } from 'next/router'
 export default function Home() {
   return (
     <div className='bg-slate-700 text-white h-screen'>
-      <div className='flex justify-center'>
+      <h1 className='text-center pt-6 text-3xl underline font-bold'>Layouts</h1>
+      <div className='flex justify-center mt-4'>
         <div className='grid grid-cols-6 gap-6 mt-5'>
           <Card
             href={"/dashboard"}
