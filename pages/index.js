@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router'
-
 export default function Home() {
   return (
     <div className='bg-slate-700 text-white h-screen'>
@@ -17,10 +15,9 @@ export default function Home() {
 }
 
 function Card({ href, name }) {
-  const router = useRouter()
   return (
     <div className='w-40 h-40 border-4 rounded flex items-center justify-center cursor-pointer hover:bg-slate-600'
-      onClick={() => router.push(href)}
+      onClick={() => window.open(href, "_blank", "noreferrer")}
     >
       {name}
     </div>
