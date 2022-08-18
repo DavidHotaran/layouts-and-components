@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <div className='bg-slate-900 min-h-[45px] flex items-center pl-8'>
+        <div className='bg-slate-900 min-h-[45px] flex items-center pl-8 top-0 left-0 sticky'>
             <NavBrand />
             <NavLink />
             <NavLink />
