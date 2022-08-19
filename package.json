@@ -2,13 +2,17 @@
   "name": "layouts-and-components",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DavidHotaran.github.io/layouts-and-components/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
